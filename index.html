@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfólio | Guilherme Csizmar</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- PARTICLES -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- PARTICLES -->
+
+  <div id="particles-js"></div>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container">
+
+      <nav>
+
+        <div class="logo">
+          <img src="img/gcdev.png" alt="Logo GC Dev">
+        </div>
+
+        <ul class="menu">
+
+          <li>
+            <a href="#hero" data-i18n="menu.home"></a>
+          </li>
+
+          <li>
+            <a href="#projects" data-i18n="menu.projects"></a>
+          </li>
+          
+          <li>
+            <a href="#about" data-i18n="menu.about"></a>
+          </li>
+
+          <li>
+            <a href="#resume" data-i18n="menu.resume"></a>
+          </li>
+          
+          <li>
+            <a href="#contact" data-i18n="menu.contact"></a>
+          </li>
+
+        </ul>
+
+        <div class="actions">
+
+          <button class="action-btn" id="langBtn"></button>
+
+          <button class="action-btn" id="themeBtn"><i data-lucide="moon"></i></button>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero container" id="hero">
+
+    <div class="hero-text">
+
+      <small data-i18n="hero.small"></small>
+
+      <h1>
+
+        Guilherme<span>Csizmar</span>
+
+      </h1>
+
+      <h2 data-i18n="hero.title"></h2>
+
+      <p data-i18n="hero.description"></p>
+
+      <div class="buttons">
+
+        <a href="#projects" class="btn primary" data-i18n="hero.projectsBtn"></a>
+
+        <a href="src/Curriculo.pdf" download class="btn secondary">
+
+        <i class="fas fa-download"></i>
+
+        <span data-i18n="resume.download"></span>
+
+      </a>
+
+      </div>
+
+    </div>
+
+    <!-- IMAGE -->
+
+    <div class="hero-image">
+
+      <div class="photo">
+
+        <img src="img/Foto.jpeg" alt="Photo Guilherme Csizmar">
+
+        <div class="status">
+
+          <div class="dot"></div>
+
+          <span data-i18n="hero.available"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+
+  <section class="projects-section" id="projects">
+
+    <div class="container">
+
+      <h2 class="section-title" data-i18n="projects.title"></h2>
+
+      <!-- FIRST 3 -->
+
+      <div class="projects-grid">
+
+        <a class="project-card" href="https://github.com/Onxgui/PortifolioV2" target="_blank">
+
+          <img src="img/PortifolioV2.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.portifoliov2Title"></h3>
+
+            <p data-i18n="projects.portifoliov2Description"></p>
+
+          </div>
+
+        </a>    
+      
+        <a class="project-card" href="https://github.com/Onxgui/HomeSpotify" target="_blank">
+
+          <img src="img/HomeSpotify.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.homespotifyTitle"></h3>
+
+            <p data-i18n="projects.homespotifyDescription"></p>
+
+          </div>
+
+        </a>
+
+        <a class="project-card" href="https://github.com/Onxgui/ColetaCorreta" target="_blank">
+
+          <img src="img/ColetaCorreta.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.coletacorretaTitle"></h3>
+
+            <p data-i18n="projects.coletacorretaDescription"></p>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+      <!-- MORE PROJECTS -->
+
+      <div class="hidden-projects" id="moreProjects">
+
+        <div class="projects-grid">
+
+          <a class="project-card" href="https://github.com/Onxgui/Portifolio" target="_blank">
+
+          <img src="img/PortifolioV1.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.portifoliov1Title"></h3>
+
+            <p data-i18n="projects.portifoliov1Description"></p>
+
+          </div>
+
+        </a>
+
+          <a class="project-card" href="https://github.com/Onxgui/CursoEducacaoFinanceira/" target="_blank">
+
+          <img src="img/CursoEducacaoFinanceira.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.cursoeducacaoTitle"></h3>
+
+            <p data-i18n="projects.cursoeducacaoDescription"></p>
+
+          </div>
+
+        </a>
+
+          <a class="project-card" href="https://github.com/Onxgui/ToDoList" target="_blank">
+
+          <img src="img/ToDoList.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.todolistTitle"></h3>
+
+            <p data-i18n="projects.todolistDescription"></p>
+
+          </div>
+
+          <a class="project-card" href="https://github.com/Onxgui/Calculator" target="_blank">
+
+          <img src="img/Calculator.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.calculatorTitle"></h3>
+
+            <p data-i18n="projects.calculatorDescription"></p>
+
+          </div>
+
+        </a>
+
+        </a>
+
+          <a class="project-card" href="https://github.com/Onxgui/BibliotecaDeJogosC" target="_blank">
+
+          <img src="img/Biblioteca de Jogos em C.png">
+
+          <div class="project-content">
+
+            <h3 data-i18n="projects.bibliotecaTitle"></h3>
+
+            <p data-i18n="projects.bibliotecaDescription"></p>
+
+          </div>
+
+        </a>        
+
+        </div>
+
+      </div>
+
+      <!-- BUTTON -->
+
+      <div class="show-projects">
+
+        <button class="btn primary" id="showMoreBtn" data-i18n="projects.button"></button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section class="about-section" id="about">
+
+    <div class="container">
+
+      <div class="about">
+
+        <div class="about-text">
+
+          <h2 class="section-title" data-i18n="about.title"></h2>
+
+          <p class="about-description" data-i18n="about.description"></p>
+
+          <p class="about-description" data-i18n="about.description2"></p>
+
+          <p class="about-description" data-i18n="about.description3"></p>
+
+          <p class="about-description" data-i18n="about.description4"></p>
+
+          <p class="about-description" data-i18n="about.description5"></p>
+
+        </div>
+
+        <div class="hero-image">
+
+      <div class="photo">
+
+        <img src="img/caricatura.png" alt="Profile">
+
+      </div>
+
+    </div>
+
+        <!-- CARDS -->
+
+        <div class="cards">
+
+          <div class="info-card">
+
+            <i data-lucide="graduation-cap"></i>
+
+            <h4 data-i18n="about.education"></h4>
+
+            <p data-i18n="about.educationDescription"></p>
+
+          </div>
+
+          <div class="info-card">
+
+            <i data-lucide="code-2"></i>
+
+            <h4 data-i18n="about.focus"></h4>
+
+            <p data-i18n="about.focusDescription"></p>
+
+          </div>
+
+          <div class="info-card">
+
+            <i data-lucide="lightbulb"></i>
+
+            <h4 data-i18n="about.interests"></h4>
+
+            <p data-i18n="about.interestsDescription"></p>
+
+          </div>
+
+          <div class="info-card">
+
+            <i data-lucide="star"></i>
+
+            <h4 data-i18n="about.differentials"></h4>
+
+            <p data-i18n="about.differentialsDescription"></p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RESUME -->
+
+<section class="resume-section" id="resume">
+
+  <div class="container">
+
+    <div class="resume-header">
+
+      <div>
+
+        <h2 class="section-title">
+
+        <span data-i18n="resume.title"></span>
+
+        </h2>
+
+        <p class="resume-description">
+
+        <span data-i18n="resume.description"></span>
+
+        </p>
+
+      </div>
+
+      <!-- DOWNLOAD BUTTON -->
+
+      <a href="src/Curriculo.pdf" download class="btn primary">
+
+        <i class="fas fa-download"></i>
+
+        <span data-i18n="resume.download"></span>
+
+      </a>
+
+    </div>
+
+    <!-- RESUME CONTENT -->
+
+    <div class="resume-container">
+
+      <!-- LEFT -->
+
+      <div class="resume-column">
+
+        <!-- EXPERIENCE -->
+
+        <div class="resume-card">
+
+          <div class="resume-card-title">
+
+            <h2 data-i18n="resume.experience.title"></h2>
+
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.experience.position"></h4>
+
+              <span data-i18n="resume.experience.dates"></span>
+
+            </div>
+
+            <p data-i18n="resume.experience.description"></p>
+
+          </div>
+
+          <!-- ITEM -->
+
+          <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.experience.position2"></h4>
+
+              <span data-i18n="resume.experience.dates2"></span>
+
+            </div>
+
+            <p data-i18n="resume.experience.description2"></p>
+
+          </div>
+
+
+            <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.experience.position3"></h4>
+
+              <span data-i18n="resume.experience.dates3"></span>
+
+            </div>
+
+            <p data-i18n="resume.experience.description3"></p>
+
+          </div>
+
+        </div>
+
+        <!-- EDUCATION -->
+
+        <div class="resume-card">
+
+          <div class="resume-card-title">
+
+            <h2 data-i18n="resume.education.title"></h2>
+
+          </div>
+
+          <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.education.degree"></h4>
+
+              <span data-i18n="resume.education.status"></span>
+
+            </div>
+
+          </div>
+
+          <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.education.degree2"></h4>
+
+              <span data-i18n="resume.education.status2"></span>
+
+              <p data-i18n="resume.education.description2"></p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="resume-column">
+
+        <!-- SKILLS -->
+
+      <div class="resume-card">
+
+  <div class="resume-card-title">
+    <h2 data-i18n="resume.skills.title"></h2>
+  </div>
+
+  <h3 class="resume-card-subtitle" data-i18n="resume.skills.subtitle1"></h3>
+  <div class="skills-list">
+    <span data-i18n="resume.skills.html"></span>
+    <span data-i18n="resume.skills.css"></span>
+    <span data-i18n="resume.skills.js"></span>
+    <span data-i18n="resume.skills.react"></span>
+    <span data-i18n="resume.skills.uiux"></span>
+    <span data-i18n="resume.skills.responsive"></span>
+    <span data-i18n="resume.skills.figma"></span>
+  </div>
+
+  <h3 class="resume-card-subtitle" data-i18n="resume.skills.subtitle2"></h3>
+  <div class="skills-list">
+    <span data-i18n="resume.skills.csharp"></span>
+    <span data-i18n="resume.skills.cplus"></span>
+    <span data-i18n="resume.skills.sql"></span>
+  </div>
+
+  <h3 class="resume-card-subtitle" data-i18n="resume.skills.subtitle3"></h3>
+  <div class="skills-list">
+    <span data-i18n="resume.skills.powerbi"></span>
+    <span data-i18n="resume.skills.excel"></span>
+    <span data-i18n="resume.skills.modeling"></span>
+    <span data-i18n="resume.skills.printing"></span>
+    <span data-i18n="resume.skills.english"></span>
+  </div>
+
+</div>
+
+        <!-- CERTIFICATES -->
+
+        <div class="resume-card">
+
+          <div class="resume-card-title">
+
+            <h2 data-i18n="resume.certificates.title"></h2>
+
+          </div>
+
+          <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.certificates.certificate1"></h4>
+
+              <span data-i18n="resume.certificates.date1"></span>
+
+            </div>
+
+            <p data-i18n="resume.certificates.description1"></p>
+
+          </div>
+
+          <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.certificates.certificate2"></h4>
+
+              <span data-i18n="resume.certificates.date2"></span>
+
+            </div>
+
+            <p data-i18n="resume.certificates.description2"></p>
+
+          </div>
+
+          <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.certificates.certificate3"></h4>
+
+              <span data-i18n="resume.certificates.date3"></span>
+
+            </div>
+
+            <p data-i18n="resume.certificates.description3"></p>
+
+          </div>
+
+           <div class="resume-item">
+
+            <div class="resume-top">
+
+              <h4 data-i18n="resume.certificates.certificate4"></h4>
+
+              <span data-i18n="resume.certificates.date4"></span>
+
+            </div>
+
+            <p data-i18n="resume.certificates.description4"></p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- CONTACT -->
+
+  <section class="contact-section" id="contact">
+
+  <div class="container">
+
+    <h2 class="section-title" data-i18n="contact.title"></h2>
+
+    <div class="contact-grid">
+
+      <!-- EMAIL -->
+
+      <a href="mailto:guilhermenassau@hotmail.com" class="contact-card"><i 	class="far fa-envelope"></i>
+
+        <h3>Email</h3>
+
+        <p>guilhermenassau@hotmail.com</p>
+
+      </a>
+
+      <!-- GITHUB -->
+
+      <a href="https://github.com/Onxgui" target="_blank" class="contact-card"><i class="fab fa-github"></i>
+
+        <h3>GitHub</h3>
+        
+        <p>github.com/Onxgui</p>
+
+      </a>
+
+      <!-- LINKEDIN -->
+
+      <a href="https://www.linkedin.com/in/guilherme-csizmar-805a302a0" target="_blank" class="contact-card"><i class="fab fa-linkedin-in"></i>
+
+        <h3>LinkedIn</h3>
+
+        <p>linkedin.com/in/Guilherme Csizmar</p>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+
+  <footer data-i18n="footer.text">
+
+    © 2026 Guilherme Csizmar. Todos os direitos reservados.
+
+  </footer>
+
+  <!-- JS -->
+
+  <script src="./js/translations.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
