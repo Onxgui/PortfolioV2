@@ -192,8 +192,9 @@ const translations = {
 
       description:"Hi! I'm Guilherme, a Computer Science student currently in my third semester, with previous studies in Control and Automation Engineering at UNIFEI.",
       description2:"My academic background has provided me solid experience in systems, electronics and programming logic, which I now apply in software development and personal projects.",
-      description3:"I have experience with microcontrollers, 3D modeling and printing, as well as programming in C/C++, C#, HTML, CSS and JavaScript. I also work in design and marketing, creating visual identities and digital materials with a focus on clear and functional communication.",
-      description4:"I like to combine the technical and creative sides to turn ideas into practical and well-presented solutions. I'm always looking to learn new tools and participate in challenging projects in technology and development.",
+      description3:"Currently, I am directing my studies towards Front-End development, creating modern, responsive web interfaces with a focus on user experience (UI/UX), using HTML, CSS, JavaScript and React.",
+      description4:"I have experience with microcontrollers, 3D modeling and printing, as well as programming in C/C++, C#, HTML, CSS and JavaScript. I also work in design and marketing, creating visual identities and digital materials with a focus on clear and functional communication.",
+      description5:"I like to combine the technical and creative sides to turn ideas into practical and well-presented solutions. I'm always looking to learn new tools and participate in challenging projects in technology and development.",
 
       education:"Education",
       educationDescription:"Computer Science - 3rd semester", 
